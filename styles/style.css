@@ -37,7 +37,6 @@
 
 .logo {
   width: 183px;
-  position: absolute;
 }
 
 .logo_place_header {
@@ -45,6 +44,7 @@
   height: 32px;
   top: 30px;
   left: 64px;
+  position: absolute;
 }
 
 .header__title {
@@ -268,20 +268,60 @@
 /* Footer section */
 
 .footer {
-  flex-basis: 711px;
   min-height: 350px;
   background-color: #1f1f1f;
+  color: #fff;
+  display: flex;
+}
+
+.footer__column-heading {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
 }
 
 .footer__columns {
   width: 90%;
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
   margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 
 .footer__columns_content_copyright {
-  border: 1px solid red;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 711px;
+}
+
+.footer__column-links {
+  list-style: none;
+  padding: 0;
+  margin: 0; 
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+.footer__column-link {
+  text-decoration: none;
+  color: #fff;
+  text-align: start;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+.footer__author {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.logo_place_footer {
+  height: 35px;
 }
