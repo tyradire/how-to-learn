@@ -7,4 +7,9 @@
   line-height: 51px;
   text-decoration: none;
   color: #2f80ed;
+  transition: .2s;
+}
+
+.feynman__link:hover {
+  color: #000;
 }
